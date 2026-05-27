@@ -31,11 +31,11 @@ jobs:
         run: |
           cd KernelSU-Next
           git fetch origin
-          git checkout fc33995cedc5e0ebf719745c71fe15e78694260f
+          git checkout 731ba814b77fbb264e14086acec69b1fb55240f0
           cd ..
 
       - name: Commit updated pointer
         run: |
           git add KernelSU-Next
-          git commit -m "Update KernelSU-Next to fc33995ced (3.2.0-legacy)" || echo "No changes to commit"
+          git commit -m "Update KernelSU-Next to 731ba81 (3.2.0-legacy)" || echo "No changes to commit"
           git push origin main
